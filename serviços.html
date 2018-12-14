@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <title>Serviços</title>
+        <style>
+        
+        *{
+    box-sizing: border-box;
+  }
+
+  html, body{
+    margin: 0;
+  }
+
+  body{
+    font-family: "Open Sans";
+  }
+
+  nav{
+    background: #515050;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+     position: fixed;
+    top: 0px;
+            
+}
+
+    .menu-itens{
+    padding: 0;
+	margin:0;
+    list-style: none;
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    height: 60px;
+        
+}
+
+    .menu-item{
+     display: inline;
+}
+
+    .menu-item{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+     padding: 3px 10px;
+    margin: 10px;
+
+            
+}
+
+    .menu-item:hover {
+    color:#fa459a;
+}
+
+    .cabeca {
+    width: 100%;
+    /*position: absolute;*/
+    z-index: 30;
+    margin-top: 60px;
+}
+
+    .fundo1{
+    position: absolute;
+    z-index: 30;
+    height: 370px;
+    width: 100%;
+    padding-bottom: 20px;
+    
+           
+            
+}
+
+    .Alpha{
+    z-index:60;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    
+        
+}
+
+    .menu-ico {
+    display: none;
+}
+
+    #logo{
+    width: 100%;
+    height: 370px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    z-index: 60;
+    height: -6px;
+    
+            
+}
+
+    .titulo {
+    font-family:calibri;
+    font-weight:bold;
+    font-size: 24px;
+    color: #000;
+    margin-top: 0px; 
+                
+    }
+
+    .icon-service {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+    .icon {
+        margin: 20px;
+        position: relative;
+
+    }
+
+    .icon-t {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 45px;
+        
+        
+    }
+
+    .icon-b {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    p {
+        font-family:calibri;
+	    font-size:18px;
+        color: #292929;
+        text-align: center;
+        }
+    
+    .titulo-service {
+            text-align: center;
+            font-family:calibri;
+            font-weight:bold;
+            font-size: 24px;
+            color: #000;
+            margin-top: 0px; 
+            
+
+        }
+
+        .contato {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        background-image: url("contato.png");
+        padding: 20px;
+        
+        }
+
+        .contato-title{
+            font-family:calibri;
+            font-weight:bold;
+            font-size: 25px;
+            color: #fff;
+            margin-top: 0px;
+            margin-right: 1100px;
+        }
+
+        .info-text {
+        font-family:calibri;
+        font-size:18px;
+        color:#fff;
+        margin-left: 25px;
+        margin-top:42px;
+        
+    }
+
+
+        .icon-contato {
+            margin-top: 55px;
+            margin-left: 30px;
+            /*display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-self:stretch;*/
+            
+
+        }
+
+        .info-text-p {
+        font-family:calibri;
+        font-size:18px;
+        color:#fff;
+        
+        
+    }
+
+        .info-text-p {
+            margin-top: -50px;
+            margin-left: 80px;
+
+        }
+
+
+        .text-f{
+            font-size: 22px;
+            line-height: 60px;
+            width: 50px;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+           /* border: 1px solid #000;*/
+            padding: 32px;
+            align-items:flex-end;
+            margin-top: -390px;
+            
+        }
+        .input{
+            margin-bottom: 16px;
+            padding: 6px 12px;
+        }
+        .button{
+            padding: 4px 8px;
+        }
+
+
+        input:not([type=submit]):not([type=file]), textarea {
+            width: 50% !important;
+            height: 50px;
+            margin-bottom: 15px;
+            padding: 0 15px 2px;
+            border: 0px solid #ebebeb;
+            background: white;
+            box-shadow: 0px 0px 0px 2px transparent;
+            -webkit-transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+            
+        }
+
+        input, textarea, select, button {
+            text-rendering: auto;
+            color: initial;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            display: inline-block;
+            text-align: start;
+            margin: 0em;
+            font: 400 13.3333px Arial;
+        }
+
+        textarea {
+            max-width: 100%;
+            min-height: 150px;
+            padding: 15px;
+        }
+
+
+        .submit {
+            background: #fa459a;
+            color:#252629;
+            font-size: 1.1em;
+            position: relative;
+            width: 50%;
+            height: 45px;
+            margin-bottom: 2em;
+            padding: 0;
+            cursor: pointer;
+            vertical-align: top;
+            text-align: center;
+            border: 0;
+            float: right;
+        }
+
+        .submit:hover{
+            color:#fff
+        }
+
+        
+        .ancora{
+            opacity: 0;
+            position: relative;
+            top: -60px;
+        }
+
+        .footer-t {
+            font-family: Arial, Helvetica, sans-serif;
+            color:#fff;
+            text-align: center;
+            font-size: 13px;
+            padding: 30px;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #292929;
+        }
+        
+        @media(max-width: 960px){
+            
+            
+            .Alpha {
+                width: 95%;
+            }
+
+
+            .menu{
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 60px;
+                z-index: 1000;
+                background: #515050;
+            }
+            .menu-bar{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 60px;
+                background: #515050;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                z-index: 1100;
+            }
+            .menu-ico{
+                display: block;
+                margin-right: 16px;
+                font-size: 32px;
+                color: #fff;
+            }
+            .menu-itens{
+                flex-direction: column;
+                justify-content: flex-start;
+                transform: translateY(-300px);
+                opacity: 0;
+                transition: transform 500ms, opacity 500ms;
+                background-color: rgb(99, 97, 97);
+                z-index: 1050;
+            }
+            .menu-aberto{
+                transform: translateY(60px);
+                opacity: 1;
+            }
+            .menu-item{
+                width: 100%;
+                background-color: #9C9C9C;
+                margin: 0px;
+                padding: 16px;
+                text-align: center;
+                margin-top: -1px; 
+            }
+            .close-menu{
+                position: absolute;
+                display: none;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100vh;
+                z-index: 990;
+                background-color: #0000;
+            }
+
+
+
+
+
+            .contato-title {
+                font-size: 19px;
+                
+            }
+            .info-text {
+                
+                font-size:15px;
+                margin-left: 0px;
+                margin-top:42px;
+                
+            }
+
+            .icon-contato {
+            margin-top: 25px;
+            margin-left: 15px;
+            }
+            .info-text-p {
+                font-size: 15px;
+            }
+
+        }
+
+    
+
+    </style>
+    </head>
+
+    <body>
+<!--MENU-->
+<header class="menu">
+<div class="menu-bar"><a class="menu-ico" href="#" onclick=" return alternarMenu();"><i class="fas fa-bars"></i></a></div>
+<nav id="menu-itens" class="menu-itens">
+  <a class="menu-item" data-ancora="a-home" href="#">Home</a>
+  <a class="menu-item" data-ancora="a-quem somos" href="#">Quem Somos</a>
+  <a class="menu-item" data-ancora="a-servicos" href="#">Serviços</a>
+  <a class="menu-item" data-ancora="a-portfolio" href="#">Portfólio</a>
+  <a class="menu-item" data-ancora="a-contato" href="#">Contato</a>
+</nav>
+</header>
+<div class="close-menu" id="close-menu"></div>
+        <!--Div Fundo 1-->
+        <a class="ancora" id="a-home"></a>
+        <div class="cabeca">
+                <img class="fundo1" src="fundo-inicio.png"  >
+                <!--Div Logo -->
+            <div id="logo">
+                <img class="Alpha" src="logo-2.png">
+            </div>
+        </div>
+
+         <!--DIV SERVIÇOS-->
+
+         <div class="service">
+            <h1 class="titulo" align="center">O QUE FAZEMOS ?</h1>
+         </div>
+
+         <div class="icon-service">
+
+
+             <div class="icon-t">
+             <div class="icon"><img src="blog-service.png" width="100" height="95" >
+                <div class="titulo-service">BLOGS</div>
+                <p class="descricao">Nosso foco é transformar seu blog em um cantinho<br>
+                especial e com a sua cara,<br>
+                100% personalizado e responsivo.</p>
+
+             </div>
+
+             <div class="icon"><img src="site-service.png" width="100" height="95" >
+                <div class="titulo-service">SITES</div>
+                <p class="descricao">Respeitamos à individualidade de cada empresa<br>
+                 com foco no que há de mais moderno no<br>
+                  segmento de mercado.</p>
+             </div>
+
+             <div class="icon"><img src="identidade-service.png" width="100" height="95" >
+                <div class="titulo-service">IDENTIDDE VISUAL</div>
+                <p class="descricao">Comece seu negócio com uma identidade visual<br>
+                 que é a sua cara! Enviamos as versões em cor e preto <br>
+                 & branco, tipografia, padrão cromático base, etc.</p>
+
+             </div>
+            </div>
+
+             <div class="icon-b">
+
+             <div class="icon"><img src="ecommerce-service.png" width="100" height="95" >
+                <div class="titulo-service">LOJAS ONLINE</div>
+                <p class="descricao">Organização e disposição fácil,<br>
+                responsiva, para que seu cliente possa comprar<br>
+                no conforto da casa dele, usamos as plataformas<br>
+            Iluria, Loja2 ou BoxShop.</p>
+
+             </div>
+
+             <div class="icon"><img src="grafico-service.png" width="100" height="95" >
+                <div class="titulo-service">ARTES GRÁFICAS</div>
+                <p class="descricao"> Trabalhamos com artes gráficas, para redes<br>
+                sociais, cartões de visita, banners,<br> convites para festas, etc. </p>
+                
+            
+            </div>
+                
+            
+            <div class="icon"><img src="mais-ecommerce.png" width="100" height="95" >
+                <div class="titulo-service">OUTROS</div>
+                <p class="descricao">Não encontrou nesta lista o que você deseja?<br>
+                Entre em contato conosco! <br>Temos uma equipe sensacional<br>
+                e disposta a te orientar.</p>
+
+            </div>
+            </div>
+         </div>
+
+
+
+
+         <div class="contato">
+                <a class="ancora" class="a-contato">.</a>
+                <h1 class="contato-title" align="center">ENTRE EM CONTATO</h1>
+            
+    
+            <div class="contato-info">
+                <div class="info-text">Dúvidas, orçamentos e outros, entre em contato pelo<br>
+                formulário ou envie um e-mail para CONTATO@ALPHAWEBDESIGNER.COM .</div>
+    
+            <div class="icon-contato"><img src="local-1.png">
+                <div class="info-text-p">LOCAL:<br>
+                 São Paulo -SP<br>
+                 Rio de Janeiro - RJ .
+                </div>
+                
+            </div>
+    
+            <div class="icon-contato"><img src="relogio-1.png">
+                <div class="info-text-p">HORÁRIO DE ATENDIMENTO:<br>
+                Segunda à sexta das  9h00 ás 20h00 ( Exceto aos feriados ).</div>
+    
+            </div>
+    
+            <div class="icon-contato"><img src="telefone-1.png">
+                <div class="info-text-p">WHATSAPP:<br>
+                    (11) 9 4864-3789<br>
+                    (21) 9 6902-7370.
+                </div>
+
+
+                <div class="formulario">
+                    <form class="form"  id="contactForm" name="contat-Form">
+                            <input class="comment-name" id="ContactForm1_contact-form-name" placeholder="Nome* :" required="" type="text">
+                            <input id="ContactForm1_contact-form-email" placeholder="E-mail* :" required="" type="email">
+                            <textarea class="required comment-text" id="ContactForm1_contact-form-email-message" placeholder="Mensagem* :" required="" type="tel"></textarea>
+                            <input class="btn submit comment-submit" id="ContactForm1_contact-form-submit" style="visibility: visible;" type="submit" value="Enviar">
+                    </form>
+                </div>  
+                
+    
+            </div>
+            </div>
+
+        </div>
+            
+            
+
+
+            <div class="footer">
+    
+
+                    <div class="footer-t">2014 - 2018 ©‎ ALPHA DESIGN - TODOS OS DIREITOS RESERVADOS.
+                            <br>
+                            <br>
+                            <br>
+                        AGRADECIMENTOS AO PROFESSOR VINICIOS ( virtualartsa.com.br )</div>
+            
+            
+                </div>
+
+
+         
+        
+        
+        
+        
+        
+        <script>
+            //menu mobile
+            menuAberto = false;
+            function alternarMenu(){
+            var links = document.getElementById('menu-itens');
+            var closeMenu = document.getElementById('close-menu');
+            if(menuAberto){
+                //removendo uma classe
+                links.classList.remove("menu-aberto");
+                //div transparente q permite tocar em qlqr lugar 
+                closeMenu.style.display = "none";
+            }else{
+                //add uma classe
+                links.classList.add("menu-aberto");
+                closeMenu.style.display = "block";
+            }
+            menuAberto = !menuAberto;
+            return false;
+            }
+            function fecharMenu(){
+            var links = document.getElementById('menu-itens');
+            links.classList.remove("menu-aberto");
+            menuAberto = false;
+            var closeMenu = document.getElementById('close-menu');
+            closeMenu.style.display = "none";
+            }
+            var closeMenu = document.getElementById('close-menu');
+            closeMenu.addEventListener('click', function(e) {
+            fecharMenu();
+            }, false);
+        </script>
+    </body>
+</html>
+

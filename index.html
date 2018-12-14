@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        
+        <title>Alpha Design</title>
+
+        <style>
+        html, body{
+                margin:0;
+                height: 100%;
+                width:100%;
+                
+            }
+            
+
+        * {
+            box-sizing: border-box;
+        }
+
+        nav{
+            background: #515050;
+            width: 100%;
+            height: 50px;
+            z-index: 1000;
+            position: fixed;
+           top: 0px;
+            
+        }
+
+        
+
+        
+
+        .menu-itens{
+        padding: 0;
+	    margin:0;
+        list-style: none;
+        display:flex;
+        justify-content:flex-end;
+        align-items: center;
+        height: 60px;
+        
+        
+            
+
+        }
+
+        .menu-item{
+            display: inline;
+        }
+
+        .menu-item{
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+            color: #fff;
+            text-decoration: none;
+            padding: 3px 10px;
+            margin: 10px;
+
+            
+        }
+
+        .menu-item:hover {
+            color:#fa459a;
+        }
+
+        
+
+        .cabeca {
+            width: 100%;
+            /*position: absolute;*/
+            z-index: 30;
+            margin-top: 60px;
+        }
+
+        .fundo1{
+            position: absolute;
+            z-index: 30;
+           height: 370px;
+           width: 100%;
+            
+        }
+
+        .Alpha{
+        z-index:60;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        
+        }
+
+        .menu-ico{
+            display: none;
+        }
+
+        #logo{
+            width: 100%;
+            height: 370px;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            z-index: 60;
+            height: -6px;
+            
+        }
+
+        .titulo {
+            font-family:calibri;
+            font-weight:bold;
+            font-size: 24px;
+            color: #000;
+            margin-top: 0px; 
+            
+
+        }
+
+        .quemSomos{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            background-image: url("sobre4.png");
+            padding-bottom: 20px;
+        }
+
+
+
+        .ancora{
+            opacity: 0;
+            position: relative;
+            top: -60px;
+        }
+
+        .sobre {
+            display: flex;
+            justify-content:space-evenly;
+        }
+
+        .perfil{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .carol {
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column; 
+                   
+            
+            
+        }
+        .thiago {
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;  
+               
+            
+            
+        }
+
+        .nome {
+            font-family: 'Courier New', Courier, monospace;
+	        font-size: 30px;
+            
+        }
+
+        .text{
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            margin-top: -10px;
+            margin-left: 20px;
+            
+        }
+
+        .btn {
+        text-transform: uppercase;
+        font-family: 'Merriweather Sans', sans-serif;
+        border: 2px solid #292929;
+        position: relative;
+        display: inline-block;
+        /*margin-left: 940px;*/
+        padding: .5em 1.6em;
+        color: #000;
+        font-size: .8em;
+        background: #transparent;
+        margin-top:5px;
+        text-decoration:none;
+	
+        }
+
+        .btn:hover {
+            color:#fa459a;
+            background-color:#transparent;
+        }
+
+        .service {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 90px;
+            padding-bottom: 60px;
+            
+        }
+
+        .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        }
+
+        p {
+        font-family:calibri;
+	    font-size:18px;
+        color: #292929;
+        text-align: center;
+        }
+    
+
+
+        .btn1 {
+        text-transform: uppercase;
+        font-family: 'Merriweather Sans', sans-serif;
+        border: 2px solid #292929;
+        position: relative;
+        display: inline-block;
+        /*margin-left: 40px;*/
+        padding: .5em 1.6em;
+        color: #000;
+        font-size: .8em;
+        background: #transparent;
+        margin-top:5px;
+        text-decoration:none;
+        
+	
+        }
+
+        .btn1:hover {
+            color:#fa459a;
+            background-color:#transparent;
+        }
+
+        .btn4 {
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:bold;
+        border: 0px solid #604a8b;
+        position: relative;
+        display: inline-block;
+        margin: .8em 0;
+        padding: .5em 1.6em;
+        color: #252629;
+        font-size: .8em;
+        background: #9C9C9C;
+        text-decoration:none;
+        margin-left: 7px;
+        
+        
+    }
+
+        .btn4:hover {
+            color:#fa459a;
+            background-color:#B5B5B5;
+    }   
+
+        .work{
+            display: flex;
+            justify-content: center;
+        }
+            
+        .posts {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .recentes{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 1080px;
+        }
+
+        .recentes-item{
+            margin: 10px;
+            position: relative;
+        }
+        
+        .recentes-item-info{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            border: 4px solid #696969;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 100ms;
+        }
+        .recentes-item-info:hover{
+            opacity: 1;
+        }
+        .recentes-item-title{
+            text-shadow: 0px 0px 5px #fff;
+        }
+
+
+        .btn5a {
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:bold;
+        border: 0px solid #604a8b;
+        position: relative;
+        display: inline-block;
+        margin: .8em 0;
+        padding: .5em 1.6em;
+        color: #252629;
+        font-size: .8em;
+        background: #9C9C9C;
+        text-decoration:none;
+        margin-left: 7px;
+        height:34px;
+        padding-bottom: 20px;
+       
+  
+        
+
+    }
+        .btn5a:hover {
+            -webkit-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+            transform: scale(0.8);
+    }
+
+
+        .contato {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        background-image: url("contato.png");
+        padding: 20px;
+        
+        }
+
+        .contato-title{
+            font-family:calibri;
+            font-weight:bold;
+            font-size: 25px;
+            color: #fff;
+            margin-top: 0px;
+            margin-right: 1100px;
+        }
+
+        .info-text {
+        font-family:calibri;
+        font-size:18px;
+        color:#fff;
+        margin-left: 25px;
+        margin-top:10px;
+        
+    }
+
+
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        .icon-contato {
+            margin-top: 55px;
+            margin-left: 30px;
+            /*display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-self:stretch;*/
+            
+
+        }
+
+        .info-text-p {
+        font-family:calibri;
+        font-size:18px;
+        color:#fff;
+        
+        
+    }
+
+        .info-text-p {
+            margin-top: -50px;
+            margin-left: 80px;
+
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #292929;
+        }
+
+
+
+        .text-f{
+            font-size: 22px;
+            line-height: 60px;
+            width: 50px;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+           /* border: 1px solid #000;*/
+            padding: 32px;
+            align-items:flex-end;
+            margin-top: -390px;
+            
+        }
+        .input{
+            margin-bottom: 16px;
+            padding: 6px 12px;
+        }
+        .button{
+            padding: 4px 8px;
+        }
+
+
+        input:not([type=submit]):not([type=file]), textarea {
+            width: 50% !important;
+            height: 50px;
+            margin-bottom: 15px;
+            padding: 0 15px 2px;
+            border: 0px solid #ebebeb;
+            background: white;
+            box-shadow: 0px 0px 0px 2px transparent;
+            -webkit-transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+            
+        }
+
+        input, textarea, select, button {
+            text-rendering: auto;
+            color: initial;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            display: inline-block;
+            text-align: start;
+            margin: 0em;
+            font: 400 13.3333px Arial;
+        }
+
+        textarea {
+            max-width: 100%;
+            min-height: 150px;
+            padding: 15px;
+        }
+
+
+        .submit {
+            background: #fa459a;
+            color:#252629;
+            font-size: 1.1em;
+            position: relative;
+            width: 50%;
+            height: 45px;
+            margin-bottom: 2em;
+            padding: 0;
+            cursor: pointer;
+            vertical-align: top;
+            text-align: center;
+            border: 0;
+            float: right;
+        }
+
+        .submit:hover{
+            color:#fff
+        }
+
+        .footer-t {
+            font-family: Arial, Helvetica, sans-serif;
+            color:#fff;
+            text-align: center;
+            font-size: 13px;
+            padding: 30px;
+        }
+
+                
+        
+        
+
+        @media(max-width: 960px){
+            body{
+            }
+            
+            .Alpha {
+                width: 95%;
+            }
+
+
+            
+
+            .perfil{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            
+            }
+
+            
+         
+
+
+            .menu{
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 60px;
+                z-index: 1000;
+                background: #515050;
+            }
+            .menu-bar{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 60px;
+                background: #515050;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                z-index: 1100;
+            }
+            .menu-ico{
+                display: block;
+                margin-right: 16px;
+                font-size: 32px;
+                color: #fff;
+            }
+            .menu-itens{
+                flex-direction: column;
+                justify-content: flex-start;
+                transform: translateY(-300px);
+                opacity: 0;
+                transition: transform 500ms, opacity 500ms;
+                background-color: rgb(99, 97, 97);
+                z-index: 1050;
+            }
+            .menu-aberto{
+                transform: translateY(60px);
+                opacity: 1;
+            }
+            .menu-item{
+                width: 100%;
+                background-color: #9C9C9C;
+                margin: 0px;
+                padding: 16px;
+                text-align: center;
+                margin-top: -1px; 
+            }
+            .close-menu{
+                position: absolute;
+                display: none;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100vh;
+                z-index: 990;
+                background-color: #0000;
+            }
+
+
+
+            .service{
+                width: 100%;
+                overflow: auto;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            .icon{
+                margin-left: 16px;
+                margin-right: 16px;
+                justify-content: flex-start;
+            }
+
+
+
+            .thiago {
+                margin: 25px;
+            }
+
+
+
+               
+            .work{
+                width: 100%;
+                overflow-x: auto;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            .btn4{
+                flex-shrink: 0;
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+            .ajuste-scroll{
+                margin-left: 8px;
+                opacity: 0;
+            }
+            .posts{
+                width: 100%;
+                overflow-x: auto;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            .recentes{
+                flex-direction: column;
+                height: 532px;
+            }
+            .titulo {
+                font-size: 20px;
+            }
+
+
+
+            .contato-title {
+                font-size: 19px;
+                
+            }
+            .info-text {
+                
+                font-size:15px;
+                margin-left: 0px;
+                margin-top:42px;
+                
+            }
+
+            .icon-contato {
+            margin-top: 25px;
+            margin-left: 15px;
+            }
+            .info-text-p {
+                font-size: 15px;
+            }
+
+            .contato{ 
+                display: flex;
+                flex-direction: column;
+                
+            }
+            
+            
+
+
+        }
+        </style>
+
+        
+
+    </head>
+
+    <body>
+<!--MENU-->
+<header class="menu">
+<div class="menu-bar"><a class="menu-ico" href="#" onclick=" return alternarMenu();"><i class="fas fa-bars"></i></a></div>
+<nav id="menu-itens" class="menu-itens">
+  <a class="menu-item" data-ancora="a-home" href="#">Home</a>
+  <a class="menu-item" data-ancora="a-quem-somos" href="#">Quem Somos</a>
+  <a class="menu-item" data-ancora="a-servicos" href="#">Serviços</a>
+  <a class="menu-item" data-ancora="a-portfolio" href="#">Portfólio</a>
+  <a class="menu-item" data-ancora="a-contato" href="#">Contato</a>
+</nav>
+</header>
+<div class="close-menu" id="close-menu"></div>
+        <!--Div Fundo 1-->
+        <a class="ancora" id="a-home"></a>
+        <div class="cabeca">
+                <img class="fundo1" src="fundo-inicio.png">
+                <!--Div Logo -->
+            <div id="logo">
+                <img class="Alpha" src="logo-2.png">
+            </div>
+        </div>
+
+        
+
+        <!-- Div Quem Somos-->
+        
+        <!--
+        <div class="perfil">
+            <img class="sobre" src="sobret.png" width="1450" height="520">
+        </div>
+        -->
+        <div class="quemSomos">
+                <a class="ancora" class="quem somos" id="a-quem-somos">.</a>
+                <h1 class="titulo" align="center">Quem Somos</h1>
+
+            <div class="perfil">
+            
+            <div class="carol">
+                 <img class="carol" src="foto-perfil.png">
+                 <h1 class="nome">Caroline</h1>
+                 <p class="text"> Designer e Front-end. </p>
+                 <a class="btn read-more" href="file:///F:/senac/projeto/projeto/sobre-thiago.html">SAIBA MAIS</a>
+
+            </div>
+
+            <div class="thiago">
+                <img class="thiago" src="foto-thiago.png">
+                <h1 class="nome">Thiago</h1>
+                <p class="text"> Designer e Financeiro. </p>
+                <a class="btn read-more" href="file:///F:/senac/projeto/projeto/sobre-thiago.html">SAIBA MAIS</a>
+
+            </div>
+            </div>
+            </div>
+
+        
+        <!--DIV para Serviços -->
+
+        <div class="servicos">
+            <a class="ancora" class="a-servicos" id="a-servicos">.</a>
+            <h1 class="titulo" align="center">O QUE FAZEMOS NA ALPHA DESIGN</h1>
+
+            <div class="service">
+
+                <div class="icon">
+                    <img src="ecomerce.png" width="180px" height="185px">
+                    <p class="descricao">Personalização de lojas nas<br>
+                        plataformas, Loja2, Iluria,<br>
+                        e box shop.</p>
+                        <a class="btn1 read-more" href="file:///F:/senac/projeto/projeto/servi%C3%A7os.html">SAIBA MAIS</a>
+                </div>
+                <div class="icon">
+                    <img src="blogs.png" width="180px" height="185px">
+                    <p class="descricao">Layouts para plataoformas Blogger e<br>
+                        Wordpress, totalmente responsiveis<br>
+                        desde a indetidade visual até a <br>
+                        programação.</p>
+                        <a class="btn1 read-more" href="file:///F:/senac/projeto/projeto/servi%C3%A7os.html">SAIBA MAIS</a>
+                </div>
+                <div class="icon">
+                    <img src="identidade.png" width="180px" height="185px">
+                    <p class="descricao">Criação de logotipo, branding,materiais<br>
+                        para papelaria,identidade visual<br>
+                        corporativa,capas para as redes sociais<br>
+                        e muito mais.</p>
+                        <a class="btn1 read-more" href="file:///F:/senac/projeto/projeto/servi%C3%A7os.html">SAIBA MAIS</a>
+                </div>
+                <div class="icon">
+                    <img src="sites.png" width="180px" height="185px">
+                    <p class="descricao">Criação de sites institucionais na<br>
+                        plataforma Wordpress.</p>
+                        <a class="btn1 read-more" href="file:///F:/senac/projeto/projeto/servi%C3%A7os.html">SAIBA MAIS</a>
+                </div>
+
+            </div>
+        </div>
+        <!--area de post-->
+
+        <div class="post">
+                <a class="ancora" class="a-portfolio" id="a-portfolio">.</a>
+                <h1 class="titulo" align="center">TRABALHOS DESENVOLVIDOS POR NÓS</h1>
+
+        <div class="work">
+            <a class="btn4 read-more" href="#" onclick="filtroCategoria('site'); return false">Sites</a>
+            <a class="btn4 read-more" href="#" onclick="filtroCategoria('blog'); return false">Blogs</a>
+            <a class="btn4 read-more" href="#" onclick="filtroCategoria('ecommerce'); return false">E-Commerce</a>
+            <a class="btn4 read-more" href="#" onclick="filtroCategoria('cartao'); return false">Cartão de visita</a>
+            <a class="btn4 read-more" href="#" onclick="filtroCategoria('sociais'); return false">Redes Sociais</a>
+            <a class="btn4 read-more" href="#" onclick="filtroCategoria('logotipo'); return false">Logotipo</a>
+            <a class="btn4 read-more" href="#" onclick="filtroCategoria('midia'); return false">Midia Kit</a>
+            <span class="ajuste-scroll">.</span>
+        </div>
+
+        <div class="posts">
+
+                <div class="recentes">
+                    <div class="recentes-item" data-categoria="site" data-categoria-primary>
+                        <img src="logo5.jpg"  width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da site</h2>
+                        </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="site">
+                        <img src="logo5.jpg" width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da site</h2>
+                         </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="site">
+                        <img src="logo5.jpg"  width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da site</h2>
+                        </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="site">
+                        <img src="logo5.jpg" width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da site</h2>
+                            </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="site">
+                        <img src="logo5.jpg"  width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da site</h2>
+                        </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="site">
+                        <img src="logo5.jpg" width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da site</h2>
+                            </div>
+                    </div>
+
+                    <div class="recentes-item" data-categoria="blog" data-categoria-primary>
+                        <img src="logo5.jpg"  width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da Blog</h2>
+                        </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="blog">
+                        <img src="logo5.jpg" width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da Blog</h2>
+                            </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="blog">
+                        <img src="logo5.jpg"  width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da Blog</h2>
+                        </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="blog">
+                        <img src="logo5.jpg" width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da Blog</h2>
+                         </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="blog">
+                        <img src="logo5.jpg"  width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da Blog</h2>
+                        </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="blog">
+                        <img src="logo5.jpg" width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da Blog</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="recentes-item" data-categoria="ecommerce" data-categoria-primary>
+                        <img src="logo5.jpg"  width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da E-Commerce</h2>
+                        </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="ecommerce">
+                        <img src="logo5.jpg" width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da E-Commerce</h2>
+                            </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="ecommerce">
+                        <img src="logo5.jpg"  width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da E-Commerce</h2>
+                        </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="ecommerce">
+                        <img src="logo5.jpg" width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da E-Commerce</h2>
+                            </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="ecommerce">
+                        <img src="logo5.jpg"  width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da E-Commerce</h2>
+                        </div>
+                    </div>
+                    <div class="recentes-item" data-categoria="ecommerce">
+                        <img src="logo5.jpg" width="340" height="235">
+                        <div class="recentes-item-info">
+                            <h2 class="recentes-item-title">Titulo da E-Commerce</h2>
+                            </div>
+                    </div>
+
+                    <div class="recentes-item" data-categoria="cartao" data-categoria-primary>
+                            <img src="logo5.jpg"  width="340" height="235">
+                            <div class="recentes-item-info">
+                                <h2 class="recentes-item-title">Titulo da Cartão de Vista</h2>
+                            </div>
+                        </div>
+                        <div class="recentes-item" data-categoria="cartao">
+                            <img src="logo5.jpg" width="340" height="235">
+                            <div class="recentes-item-info">
+                                <h2 class="recentes-item-title">Titulo da Cartão de Vista</h2>
+                                </div>
+                        </div>
+                        <div class="recentes-item" data-categoria="cartao">
+                            <img src="logo5.jpg"  width="340" height="235">
+                            <div class="recentes-item-info">
+                                <h2 class="recentes-item-title">Titulo da Cartão de Vista</h2>
+                            </div>
+                        </div>
+                        <div class="recentes-item" data-categoria="cartao">
+                            <img src="logo5.jpg" width="340" height="235">
+                            <div class="recentes-item-info">
+                                <h2 class="recentes-item-title">Titulo da Cartão de Vista</h2>
+                                </div>
+                        </div>
+                        <div class="recentes-item" data-categoria="cartao">
+                            <img src="logo5.jpg"  width="340" height="235">
+                            <div class="recentes-item-info">
+                                <h2 class="recentes-item-title">Titulo da Cartão de Vista</h2>
+                            </div>
+                        </div>
+                        <div class="recentes-item" data-categoria="cartao">
+                            <img src="logo5.jpg" width="340" height="235">
+                            <div class="recentes-item-info">
+                                <h2 class="recentes-item-title">Titulo da Cartão de Vista</h2>
+                                </div>
+                        </div>
+
+                        <div class="recentes-item" data-categoria="sociais" data-categoria-primary>
+                                <img src="logo5.jpg"  width="340" height="235">
+                                <div class="recentes-item-info">
+                                    <h2 class="recentes-item-title">Titulo da RedesSociais</h2>
+                                </div>
+                            </div>
+                            <div class="recentes-item" data-categoria="sociais">
+                                <img src="logo5.jpg" width="340" height="235">
+                                <div class="recentes-item-info">
+                                    <h2 class="recentes-item-title">Titulo da RedesSociais</h2>
+                                    </div>
+                            </div>
+                            <div class="recentes-item" data-categoria="sociais">
+                                <img src="logo5.jpg"  width="340" height="235">
+                                <div class="recentes-item-info">
+                                    <h2 class="recentes-item-title">Titulo da RedesSociais</h2>
+                                </div>
+                            </div>
+                            <div class="recentes-item" data-categoria="sociais">
+                                <img src="logo5.jpg" width="340" height="235">
+                                <div class="recentes-item-info">
+                                    <h2 class="recentes-item-title">Titulo da RedesSociais</h2>
+                                    </div>
+                            </div>
+                            <div class="recentes-item" data-categoria="sociais">
+                                <img src="logo5.jpg"  width="340" height="235">
+                                <div class="recentes-item-info">
+                                    <h2 class="recentes-item-title">Titulo da RedesSociais</h2>
+                                </div>
+                            </div>
+                            <div class="recentes-item" data-categoria="sociais">
+                                <img src="logo5.jpg" width="340" height="235">
+                                <div class="recentes-item-info">
+                                    <h2 class="recentes-item-title">Titulo da RedesSociais</h2>
+                                    </div>
+                            </div>
+
+                            <div class="recentes-item" data-categoria="logotipo" data-categoria-primary>
+                                    <img src="logo5.jpg"  width="340" height="235">
+                                    <div class="recentes-item-info">
+                                        <h2 class="recentes-item-title">Titulo da Logotipo</h2>
+                                    </div>
+                                </div>
+                                <div class="recentes-item" data-categoria="logotipo">
+                                    <img src="logo5.jpg" width="340" height="235">
+                                    <div class="recentes-item-info">
+                                        <h2 class="recentes-item-title">Titulo da Logotipo</h2>
+                                        </div>
+                                </div>
+                                <div class="recentes-item" data-categoria="logotipo">
+                                    <img src="logo5.jpg"  width="340" height="235">
+                                    <div class="recentes-item-info">
+                                        <h2 class="recentes-item-title">Titulo da Logotipo</h2>
+                                    </div>
+                                </div>
+                                <div class="recentes-item" data-categoria="logotipo">
+                                    <img src="logo5.jpg" width="340" height="235">
+                                    <div class="recentes-item-info">
+                                        <h2 class="recentes-item-title">Titulo da Logotipo</h2>
+                                        </div>
+                                </div>
+                                <div class="recentes-item" data-categoria="logotipo">
+                                    <img src="logo5.jpg"  width="340" height="235">
+                                    <div class="recentes-item-info">
+                                        <h2 class="recentes-item-title">Titulo da Logotipo</h2>
+                                    </div>
+                                </div>
+                                <div class="recentes-item" data-categoria="logotipo">
+                                    <img src="logo5.jpg" width="340" height="235">
+                                    <div class="recentes-item-info">
+                                        <h2 class="recentes-item-title">Titulo da Logotipo</h2>
+                                    </div>
+                                </div>
+
+                                <div class="recentes-item" data-categoria="midia">
+                                        <img src="logo5.jpg"  width="340" height="235">
+                                        <div class="recentes-item-info">
+                                            <h2 class="recentes-item-title">Titulo da MidiaKit</h2>
+                                        </div>
+                                    </div>
+                                    <div class="recentes-item" data-categoria="midia">
+                                        <img src="logo5.jpg" width="340" height="235">
+                                        <div class="recentes-item-info">
+                                            <h2 class="recentes-item-title">Titulo da MidiaKit</h2>
+                                            </div>
+                                    </div>
+                                    <div class="recentes-item" data-categoria="midia">
+                                        <img src="logo5.jpg"  width="340" height="235">
+                                        <div class="recentes-item-info">
+                                            <h2 class="recentes-item-title">Titulo da MidiaKit</h2>
+                                        </div>
+                                    </div>
+                                    <div class="recentes-item" data-categoria="midia">
+                                        <img src="logo5.jpg" width="340" height="235">
+                                        <div class="recentes-item-info">
+                                            <h2 class="recentes-item-title">Titulo da MidiaKit</h2>
+                                            </div>
+                                    </div>
+                                    <div class="recentes-item" data-categoria="midia">
+                                        <img src="logo5.jpg"  width="340" height="235">
+                                        <div class="recentes-item-info">
+                                            <h2 class="recentes-item-title">Titulo da MidiaKit</h2>
+                                        </div>
+                                    </div>
+                                    <div class="recentes-item" data-categoria="midia">
+                                        <img src="logo5.jpg" width="340" height="235">
+                                        <div class="recentes-item-info">
+                                            <h2 class="recentes-item-title">Titulo da MidiaKit</h2>
+                                            </div>
+                                    </div>
+
+
+                </div>
+                <a class="btn5a" href="#">CONHEÇA MAIS PROJETOS REALIZADOS</a>
+
+        </div>
+
+        <div class="contato">
+            <a class="ancora" class="a-contato" id="a-contato">.</a>
+            <h1 class="contato-title" align="center">ENTRE EM CONTATO</h1>
+            
+            
+            
+            
+
+        <div class="contato-info">
+            <div class="info-text">Dúvidas, orçamentos e outros, entre em contato pelo<br>
+            formulário ou envie um e-mail para CONTATO@ALPHAWEBDESIGNER.COM .</div>
+
+        <div class="icon-contato"><img src="local-1.png">
+            <div class="info-text-p">LOCAL:<br>
+             São Paulo -SP<br>
+             Rio de Janeiro - RJ .
+            </div>
+            
+        </div>
+
+        <div class="icon-contato"><img src="relogio-1.png">
+            <div class="info-text-p">HORÁRIO DE ATENDIMENTO:<br>
+            Segunda à sexta das  9h00 ás 20h00 ( Exceto aos feriados ).</div>
+
+        </div>
+
+        <div class="icon-contato"><img src="telefone-1.png">
+            <div class="info-text-p">WHATSAPP:<br>
+                (11) 9 4864-3789<br>
+                (21) 9 6902-7370.
+            </div>
+
+            
+            <div class="formulario">
+                <form class="form"  id="contactForm" name="contat-Form">
+                        <input class="comment-name" id="ContactForm1_contact-form-name" placeholder="Nome* :" required="" type="text">
+                        <input id="ContactForm1_contact-form-email" placeholder="E-mail* :" required="" type="email">
+                        <textarea class="required comment-text" id="ContactForm1_contact-form-email-message" placeholder="Mensagem* :" required="" type="tel"></textarea>
+                        <input class="btn submit comment-submit" id="ContactForm1_contact-form-submit" style="visibility: visible;" type="submit" value="Enviar">
+                </form>
+            </div>            
+         
+            
+
+        </div>
+
+
+            
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+    
+
+        <div class="footer-t">2014 - 2018 ©‎ ALPHA DESIGN - TODOS OS DIREITOS RESERVADOS.
+                <br>
+                <br>
+                <br>
+            AGRADECIMENTOS AO PROFESSOR VINICIOS ( virtualartsa.com.br )</div>
+
+
+    </div>
+        
+        
+            <!--</div>
+
+
+
+
+        </div>-->
+
+
+       
+        <script>
+
+            //âncoras da pagina
+
+            filtroCategoriaInicial();
+            
+            function filtroCategoria(categoria){
+                document.querySelectorAll('[data-categoria]').forEach(card => {
+                    card.style.display = "none";
+                    if (card.getAttribute('data-categoria') == categoria){
+                        card.style.display = "flex";
+                    }
+                });
+            }
+
+
+
+            function filtroCategoriaInicial(){
+                document.querySelectorAll('[data-categoria]').forEach(card => {
+                    card.style.display = "none";
+                    if (card.hasAttribute('data-categoria-primary')){
+                        card.style.display = "flex";
+                    }
+                });
+            }
+
+
+            //menu mobile
+            menuAberto = false;
+            function alternarMenu(){
+            var links = document.getElementById('menu-itens');
+            var closeMenu = document.getElementById('close-menu');
+            if(menuAberto){
+                //removendo uma classe
+                links.classList.remove("menu-aberto");
+                //div transparente q permite tocar em qlqr lugar 
+                closeMenu.style.display = "none";
+            }else{
+                //add uma classe
+                links.classList.add("menu-aberto");
+                closeMenu.style.display = "block";
+            }
+            menuAberto = !menuAberto;
+            return false;
+            }
+            function fecharMenu(){
+            var links = document.getElementById('menu-itens');
+            links.classList.remove("menu-aberto");
+            menuAberto = false;
+            var closeMenu = document.getElementById('close-menu');
+            closeMenu.style.display = "none";
+            }
+            var closeMenu = document.getElementById('close-menu');
+            closeMenu.addEventListener('click', function(e) {
+            fecharMenu();
+            }, false);
+
+
+
+            //âncoras da pagina
+            document.querySelectorAll('[data-ancora]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        fecharMenu();
+                        document.getElementById(this.getAttribute('data-ancora')).scrollIntoView({
+                            behavior: 'smooth', block: 'start', inline: 'nearest'
+                        });
+                    });
+                });
+            
+
+
+        
+        </script>
+        </div>
+    </body>
+</html>
