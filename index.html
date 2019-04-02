@@ -1107,11 +1107,11 @@
             
             
             <div class="formulario">
-                <form class="form"  id="contactForm" name="contat-Form">
-                        <input class="comment-name" id="ContactForm1_contact-form-name" placeholder="Nome* :" required="" type="text">
-                        <input id="ContactForm1_contact-form-email" placeholder="E-mail* :" required="" type="email">
-                        <textarea class="required comment-text" id="ContactForm1_contact-form-email-message" placeholder="Mensagem* :" required="" type="tel"></textarea>
-                        <input class="btn submit comment-submit" id="ContactForm1_contact-form-submit" style="visibility: visible;" type="submit" value="Enviar" onclick="return validar_contat_Form">
+                <form class="form" method="POST" action="./email.php">
+			<input class="field" name="name" placeholder="NOME" "required">	
+			<input class="field" name="email" placeholder="E-Mail" "required">
+			<textarea class="field" name="message" placeholder="DIGITE SUA MENSAGEM..." "required"></textarea>
+			<input class="field" type="submit" value="Enviar">
                 </form>
             </div>            
          
